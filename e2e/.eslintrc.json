@@ -1,47 +1,59 @@
 {
-  "root": true,
-  "parser": "@typescript-eslint/parser",
-  "parserOptions": {
-    "ecmaVersion": 2020,
-    "sourceType": "module"
-  },
-  "env": {
-    "mocha": true,
-    "node": true,
-    "es6": true
-  },
-  "extends": ["plugin:prettier/recommended", "plugin:@typescript-eslint/recommended"],
-  "ignorePatterns": ["node_modules/"],
-  "rules": {
-    "semi": ["error", "always"],
-    "no-console": "off",
-    "quotes": [
-      "error",
-      "double",
-      {
-        "allowTemplateLiterals": true
-      }
+    "root": true,
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaVersion": 2020,
+        "sourceType": "module"
+    },
+    "env": {
+        "mocha": true,
+        "node": true,
+        "es6": true
+    },
+    "extends": [
+        "plugin:prettier/recommended",
+        "plugin:@typescript-eslint/recommended"
     ],
-    "max-len": [
-      "error",
-      {
-        "code": 155
-      }
+    "ignorePatterns": [
+        "node_modules/"
     ],
-    "@typescript-eslint/explicit-function-return-type": "off",
-    "@typescript-eslint/no-var-requires": "off",
-    "@typescript-eslint/explicit-module-boundary-types": ["off"],
-    "@typescript-eslint/no-explicit-any": ["error"],
-    "prettier/prettier": [
-      "error",
-      {
-        "semi": true,
-        "trailingComma": "all",
-        "singleQuote": false,
-        "printWidth": 155,
-        "tabWidth": 4,
-        "endOfLine": "auto"
-      }
-    ]
-  }
+    "rules": {
+        "semi": [
+            "error",
+            "always"
+        ],
+        "no-console": "error",
+        "quotes": [
+            "error",
+            "double",
+            {
+                "allowTemplateLiterals": true
+            }
+        ],
+        "max-len": [
+            "error",
+            {
+                "code": 155
+            }
+        ],
+        "@typescript-eslint/explicit-function-return-type": "off",
+        "@typescript-eslint/no-var-requires": "off",
+        "@typescript-eslint/explicit-module-boundary-types": [
+            "off"
+        ],
+        "@typescript-eslint/no-explicit-any": [
+            "error"
+        ],
+        "prettier/prettier": [
+            "error",
+            {
+                "semi": true,
+                "trailingComma": "all",
+                "singleQuote": false,
+                "printWidth": 155,
+                "tabWidth": 4,
+                "endOfLine": "auto"
+            }
+        ]
+    }
 }
